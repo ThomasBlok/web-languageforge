@@ -49,6 +49,10 @@ export class UserService {
     return this.api.call('change_password', [userId, newPassword], callback);
   }
 
+  verifyPassword(userId: string, password: string, callback?: JsonRpcCallback) {
+    return this.api.call('verify_password', [userId, password], callback);
+  }
+
   resetPassword(resetPasswordKey: string, newPassword: string, callback?: JsonRpcCallback) {
     return this.api.call('reset_password', [resetPasswordKey, newPassword], callback);
   }

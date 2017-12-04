@@ -142,6 +142,11 @@ class Sf
         return UserCommands::updateUser($params, $this->website);
     }
 
+    public function user_verify_password($userId, $password)
+    {
+        return UserCommands::verifyPassword($userId, $password);
+    }
+
     /**
      * Update a User Profile
      * Changing username will notify client to signout
