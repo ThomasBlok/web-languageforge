@@ -14,8 +14,8 @@ export class ChangePasswordAppController implements angular.IController {
               private notice: NoticeService) {}
 
   updatePassword() {
-    if (PasswordModel.verifyPassword(old_password); {
-      old_password = old_password;
+    if (PasswordModel.verifyPassword(this.old_password) {
+      this.old_password = this.old_password;
     }
     if (this.password === this.confirm_password) {
       this.sessionService.getSession().then((session) => {
